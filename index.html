@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event on Javascript</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+
+</head>
+
+<body>
+    <div class="onClickExample">
+            <p>Click the button to display the date.</p>
+            <button class="button" onclick="displayDate()">The time is?</button></br></br>
+            <p id="demo">
+    </div>
+
+    <div class="onChangeExample">
+            <p>This example of "onchange" event to an input element.</p>
+
+            Enter your name: <input type="text" id="fname" onchange="myFunction()">
+    
+            <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+    
+    </div>
+
+        
+        <p class="drag">Drag the p element back and forth between the two rectangles:</p>
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Drag me!</p>
+        </div>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <p id="demo"></p>
+        
+
+        
+
+    
+</body>
+</html>
